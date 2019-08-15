@@ -1,6 +1,6 @@
 <p>
 <h1>This is first App in html code</h1>
-{{ myvar }}
+<!--{{ myvar }}
 </p>
 <p>
 {{ myvar2 }}
@@ -12,4 +12,22 @@
 <li>{{ eachelement }}</li>
 {% endfor %}
 </ul>
-</p>
+</p>-->
+<h1>Cities</h1>
+<table width="100%"  border="1">
+    <tr style="background-color:lightgray">
+        <th>City</th>
+        <th>State</th>
+        <th>latitude</th>
+        <th>longitude</th>
+    </tr>
+    {% for city in cities %}
+       <tr>
+           <td>{{city.city}}</td>
+           <td>{{city.state }}</td>
+           <td>{{city.latitude}}</td>
+           <td>{{city.longitude}}</td>
+       </tr>
+    {% endfor %}
+
+</table>
