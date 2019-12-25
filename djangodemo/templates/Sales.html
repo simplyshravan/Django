@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p>
+<h1>This is Sales App in html code</h1>
+<h1>Sales</h1>
+<table width="100%"  border="1">
+    <tr style="background-color:lightgray">
+        <th>City</th>
+        <th>State</th>
+        <th>Amount Sold</th>
+    </tr>
+    
+       <tr>{{ sales }}
+           <!-- <td>{{sale.city}}</td>
+           <td>{{sale.state }}</td>
+           <td>{{sale.sale_amount}}</td> -->
+       </tr>
+
+</table>
+{% endblock %}
